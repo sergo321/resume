@@ -52,7 +52,7 @@ body main .close {
     cursor: pointer;
     border-radius: 3px;
     box-shadow: 1px 1px 1px 1px red;
-    margin-left: 40%;
+    margin-left: 47%;
     transition-duration: 0.5s;
 }
 body main  .close:hover{
