@@ -30,3 +30,20 @@ personal.addEventListener("click", ()=>{
 hide3.addEventListener("click",()=>{
     personalsec.style.display="none"
 })
+
+
+
+var i = 0;
+var txt = 'Hi, Iam Sergo, I started learning programming a year ago and today
+I've already studied: HTML, CSS, JS, Angular, Github, Bootstrap, SQL,
+QA Testing and Postman. I am motivated by deepening existing knowledge
+and acquiring new skills.'
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
