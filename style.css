@@ -21,7 +21,7 @@ body {
     font-size: 17px;
     color: rgb(255, 255, 255);
     border: 0px;
-    background-color: rgb(2, 128, 0);
+    background-color: rgb(135, 117, 10);
     cursor: pointer;
 }
 body main {
@@ -41,10 +41,51 @@ body main .hide {
     box-shadow: 5px 5px 5px 5px green;
     margin: 10px;
 }
-body main .hide p {
-    font-size: 16px;
-    color: wheat;
+body main .about-me{
+    background-image: url(./imges/about\ me\ background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px 5px rgb(49, 30, 7);
+    left: 10%;
+}
+
+
+
+body main .about-me p {
+    font-size: 18px;
+    color: rgb(250, 251, 255);
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body main .education{
+    background-image: url(./imges/back-to-school-yellow-abstract-pattern-background-free-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px 5px rgb(132, 93, 41);
+    left: 15%;
+}
+body main .education h2,p {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+body main .education p {
+    margin-left: 70%;
+    font-size: 20px;
+    color: rgb(13, 0, 253);
+}
+
+body main .personal {
+    background-image: url(./imges/16-165814_20-cool-technology-wallpapers-information-technology-background-hd.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 5px 5px 5px 5px rgba(3, 7, 28, 0.792);
+    margin-bottom: 200px;
+}
+body main .personal p {
+    color: white;
+    font-size: 17px;
+    text-align: left;
 }
 body main .close {
     background-color: red;
@@ -62,10 +103,6 @@ body main  .close:hover{
     box-shadow: 1px 1px 1px 1px black;
 }
 
-body main .personal p{
-    text-align: left;
-    color: black;
-}
 
 
 body main .about-me {
@@ -81,7 +118,7 @@ body main .personal {
     text-align: center;
 }
 
-.contact {
+/* .contact {
     position: fixed;
     top: 100px;
     left: 20px;
@@ -93,4 +130,23 @@ body main .personal {
 .contact a {
     text-decoration: none;
      color: rgb(90, 11, 164)
+} */
+
+
+footer {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p,a {
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 20px;
 }
