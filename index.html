@@ -12,8 +12,40 @@
       <button class="btn" onclick="typeWriter()" id="about-me">About me</button>
       <button class="btn" id="education">Education</button>
       <button class="btn" id="personal-info">personal information</button>
+      <button class="btn" id="mathbtn">Quadratic Equation</button>
+      <button class="btn" id="tic-tac-toe">Tic Tac Toe</button>
     </nav>
     <main>
+      <section class="math">
+        <h2>Quadratic Equation</h2>
+        <div class="wrap">
+          <div class="equation">
+            <input type="number" placeholder="input a" class="mat" id="inp1" />
+            <input type="number" placeholder="input b" class="mat" id="inp2" />
+            <input type="number" placeholder="input c" class="mat" id="inp3" />
+            <button id="solve" class="mat sol">solve</button>
+          </div>
+          <div class="answer">
+            Answer
+            <span
+              >D =
+              <p id="answerd"></p>
+              ;</span
+            >
+            <span
+              >X1=
+              <p id="answer1"></p>
+              ;</span
+            >
+            <span
+              >X2=
+              <p id="answer2"></p>
+              ;</span
+            >
+          </div>
+        </div>
+        <button class="close closeequalition">close</button>
+      </section>
       <section class="hide about-me">
         <p id="typing"></p>
         <button class="close close1">close</button>
@@ -35,6 +67,67 @@
         <p>Personal number # 59001110093</p>
         <p>Legal address: Gori district, village kveshi</p>
         <button class="close close3">close</button>
+      </section>
+      <section class="tic-tac">
+        <aside class="wrapper">
+          <div
+            id="win1"
+            class="click ticval"
+            onclick="runfunct();"
+            readonly
+          ></div>
+          <div
+            id="win2"
+            class="click ticval"
+            onclick="runfunct();"
+            readonly
+          ></div>
+          <div
+            id="win3"
+            class="click ticval"
+            onclick="runfunct();"
+            readonly
+          ></div>
+          <div
+            id="win4"
+            class="click ticval"
+            onclick="runfunct();"
+            readonly
+          ></div>
+          <div
+            id="win5"
+            class="click ticval"
+            onclick="runfunct();"
+            readonly
+          ></div>
+          <div
+            id="win6"
+            class="click ticval"
+            onclick="runfunct();"
+            readonly
+          ></div>
+          <div
+            id="win7"
+            class="click ticval"
+            onclick="runfunct();"
+            readonly
+          ></div>
+          <div
+            id="win8"
+            class="click ticval"
+            onclick="runfunct();"
+            readonly
+          ></div>
+          <div
+            id="win9"
+            class="click ticval"
+            onclick="runfunct();"
+            readonly
+          ></div>
+        </aside>
+        <div id="reset">
+          Reset<button class="close closetic-tac">close</button>
+        </div>
       </section>
       <!-- <section class="contact">
         <p>

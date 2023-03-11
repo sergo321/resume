@@ -1,7 +1,8 @@
 body {
     margin: 0px;
     padding: 0px;
-    background: url(./imges/background.png);
+    background-image: url(./imges/background.png);
+    background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -149,4 +150,88 @@ footer p,a {
     font-size: 17px;
     text-decoration: none;
     margin: 20px;
+}
+
+/* quadratic equation*/
+main .math {
+    display: none;
+    margin-left: 30px;
+    width: 350px;
+    text-align: center;
+    border: 3px solid black;
+}
+main .math h2 {
+    color: green;
+    
+}
+main .math .wrap{
+    display: flex;
+    justify-content: space-around;
+}
+main .math .equation {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+
+}
+main .math .equation .mat {
+    width: 100px;
+    height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+main .math .equation .sol {
+    background-color: green;
+}
+main .math .answer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+main .math .answer span {
+    display: flex;
+    align-items: center;
+}
+/* tic tac */
+main .tic-tac {
+    display: none;
+}
+.wrapper {
+    width: 320px;
+    height: 300px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+.click {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: rgb(86, 88, 88);
+    border: 2px solid black;
+    user-select: none;
+    transition-duration: 0.5s;
+}
+.click:hover{
+    background-color: chartreuse;
+    transition-duration: 0.5s;
+}
+#reset{
+    width: 250px;
+    height: 50px;
+    margin: auto;
+    user-select: none;
+    cursor: pointer;
+    margin-top: 50px;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
 }
