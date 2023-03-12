@@ -80,6 +80,8 @@ solvebtn.addEventListener("click", function solve(a,b,c){
  b=b2.value;
  c=c2.value;
  d=Math.sqrt(Math.pow(b,2) - (4*a*c));
+ d=Math.round(d)
+ d1.innerHTML=d;
  if (d<0 || isNaN(d)){
     alert("ამონახსნი არ გააჩნია")
     a2.value="";
@@ -88,23 +90,20 @@ solvebtn.addEventListener("click", function solve(a,b,c){
  }else if(a===""||b===""||c===""){
     alert("შეავსეთ ყველა ველი")
  }
- else if (d=0){
+ else if (d==0){
     let result=((-1*b)/(2*a));
-    d1.innerHTML=d;
+
     x1.innerHTML=result;
-    x2.innerHTML=result;
+    x2.innerHTML="განტოლება მხოლოდ ერთი ამონახსნი აქვს";
     a2.value="";
     b2.value="";
     c2.value="";
- }else{
-    let result = (((-1*b) +d )/(2*a));
-    let result2 = (((-1*b) -d)/(2*a));
-    console.log(a,b,c,d)
-
-    d1.innerHTML=d;
+ }
+else {
+    let result = ((-1*b) +d )/(2*a);
+    let result2 = ((-1*b) -d)/(2*a);
     x1.innerHTML=result;
     x2.innerHTML=result2;
-
     a2.value="";
     b2.value="";
     c2.value="";
